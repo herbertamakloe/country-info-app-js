@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="366" height="228" viewBox="0 0 366 228">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.551" x2="0.611" y2="0.19" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.753" stop-color="#d5d5d5" stop-opacity="0.631"/>
+      <stop offset="1" stop-color="#d5d5d5" stop-opacity="0.769"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.705" y1="0.267" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.067" stop-color="#fff" stop-opacity="0.902"/>
+      <stop offset="0.639" stop-color="#fff" stop-opacity="0.749"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.451"/>
+    </linearGradient>
+  </defs>
+  <g id="scattered-clouds" transform="translate(-1168 -408)">
+    <path id="gradient" d="M85.8,183v-.187A91.51,91.51,0,1,1,178.145,60.778a67.953,67.953,0,1,1,46.721,121.969V183Z" transform="translate(1247 408)" fill="url(#linear-gradient)"/>
+    <path id="export" d="M97.463,208v-.213A104.009,104.009,0,1,1,202.353,69.081a77.218,77.218,0,1,1,53.07,138.631V208Z" transform="translate(1168 428)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
