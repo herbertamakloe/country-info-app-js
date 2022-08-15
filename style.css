@@ -73,6 +73,7 @@ body,
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.3);
 	outline: none;
+	cursor: pointer;
 }
 
 .search_area button svg {

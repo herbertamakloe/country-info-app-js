@@ -21,8 +21,6 @@ const fetchData = (country) => {
 	bgBlur.style.background = `url("https://source.unsplash.com/1600x900/?${country}")`;
 };
 
-// console.log(fetchData);
-
 const displayInfo = (data) => {
 	officialName.innerHTML = data[0].name.official;
 	commonName.innerHTML = data[0].name.common;
@@ -33,7 +31,7 @@ const displayInfo = (data) => {
 	population.innerHTML = data[0].population;
 
 	data.forEach((element) => {
-		console.log(element.currencies);
+		// console.log(element.currencies);
 
 		const currencyObject = element.currencies;
 		const entries = Object.entries(currencyObject);
@@ -42,30 +40,28 @@ const displayInfo = (data) => {
 	});
 
 	data.forEach((element) => {
-		console.log(element.languages);
+		// console.log(element.languages);
 
 		const languageObject = element.languages;
 		const entries = Object.entries(languageObject);
 
-		console.log(entries);
-
-		let languageCount = 0;
-		let languages = "";
+		let languageArr = [];
+		let language = "";
 
 		for (const [key, value] of entries) {
-			console.log(`${value}`);
-
-			languages += value + ", ";
-
-			commonLanguages.innerHTML = languages;
+			// console.log(`${value}`);
+			languageArr.push(value);
 		}
 
-		// commonLanguages.innerHTML = entries.eng;
+		languageArr.forEach((lang) => {
+			// console.log(lang);
+			language += lang + ", ";
+		});
 
-		// currencyName.innerHTML = `${entries[0][1].name} (${entries[0][1].symbol})`;
+		let finalLang = language.slice(0, -2) + ".";
+		commonLanguages.innerHTML = finalLang;
 	});
 
-	// commonLanguages.innerHTML = data[0].languages.eng;
 	countryImage.src = data[0].flags.svg;
 };
 
@@ -79,6 +75,8 @@ inputText.addEventListener("keyup", (e) => {
 	}
 });
 
-// const searchCountry = () => {
-// 	inputText.value;
-// };
+const onLoad = () => {
+	window.addEventListener("load", fetchData("Ghana"));
+};
+
+onLoad();
