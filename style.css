@@ -45,6 +45,12 @@ body,
 	position: relative;
 }
 
+.container h1{
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+}
+
 .search_area {
 	margin: 20px 15px;
 	display: flex;
